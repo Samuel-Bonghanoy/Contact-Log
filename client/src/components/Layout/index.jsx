@@ -1,10 +1,17 @@
 import Contact from "../Contact";
 import Navbar from "../Navbar";
+import { useNavigate } from "react-router-dom";
 
 function AppLayout() {
+  const navigate = useNavigate();
   return (
     <>
-      <button className="btn btn-circle fixed bottom-5 right-5 z-50">
+      <button
+        className="fixed z-50 btn btn-circle bottom-5 right-5"
+        onClick={() => {
+          navigate("contact/create");
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -15,10 +22,10 @@ function AppLayout() {
           <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
         </svg>
       </button>
-      <div className="h-fit bg-cyan-950 py-5 overflow-x-hidden">
+      <div className="py-5 overflow-x-hidden h-fit bg-cyan-950">
         <Navbar />
-        <div className="divider mx-10 divider-info before:bg-gray-300 after:bg-gray-300"></div>
-        <div className="w-screen flex flex-col gap-3 items-center justify-center">
+        <div className="mx-10 divider divider-info before:bg-gray-300 after:bg-gray-300"></div>
+        <div className="flex flex-col items-center justify-center w-screen gap-3">
           <Contact />
           <Contact />
           <Contact />
