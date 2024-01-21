@@ -18,7 +18,7 @@ function Form() {
       <p className="self-start my-0 ml-10 text-lg text-white">Details</p>
       <div className="py-0 mx-10 my-0 divider divider-info before:bg-gray-300 after:bg-gray-300"></div>
       <form className="bg-cyan-900  justify-between h-fit py-5 w-[93%] px-6 flex flex-col gap-3">
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-2">
           <p className="text-white">First Name</p>
           <input
             type="text"
@@ -27,7 +27,7 @@ function Form() {
           />
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-2">
           <p className="text-white">Last Name</p>
           <input
             type="text"
@@ -36,7 +36,7 @@ function Form() {
           />
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-2">
           <p className="text-white">Contact Number</p>
           <input
             type="text"
@@ -45,7 +45,7 @@ function Form() {
           />
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-2">
           <p className="text-white">Email Address</p>
           <input
             type="text"
@@ -53,7 +53,7 @@ function Form() {
             className="w-[70%] input input-bordered bg-cyan-950"
           />
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-2">
           <p className="text-white">Description</p>
           <input
             type="text"
