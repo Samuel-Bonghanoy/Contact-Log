@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Contact() {
+export default function Contact3() {
   return (
     <Link
       to="/contact/1"
@@ -9,12 +9,12 @@ export default function Contact() {
       <div className="flex items-center gap-5">
         <div className="avatar">
           <div className="w-10 rounded-full">
-            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            <img src="https://st3.depositphotos.com/14803258/18261/i/450/depositphotos_182619182-stock-photo-woman.jpg" />
           </div>
         </div>
         <div className="flex flex-col">
-          <p className="font-bold text-white text-md">Alice Adams</p>
-          <p className="text-sm">Officemate</p>
+          <p className="font-bold text-white text-md">Belle Beckingham</p>
+          <p className="text-sm">Friend</p>
         </div>
       </div>
       <div className="flex items-center">
